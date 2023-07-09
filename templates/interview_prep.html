@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .card {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleAnswer(cardId) {
+            var answer = document.getElementById(cardId + '-answer');
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mission Transition</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="/jobs">Jobs</a>
+                        <a class="nav-link" href="/resume">Resume Builder</a>
+                        <a class="nav-link" href="/interview-prep">Interview Preparation</a>
+                        <a class="nav-link" href="/therapist">Therapist</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav> -->
+    </nav>
+    <h1>Interview Prep</h1>
+    <p class="centered">You can find the best model answers to possible interview questions here.</p>
+    <div class="card" onclick="toggleAnswer('card1')">
+        <h3>Question 1: Can you briefly describe your military background and experience?</h3>
+        <div id="card1-answer" class="answer">
+            Answer: I served in the United States Army for 10 years as an Infantry Sergeant. During my time in the
+            military, I deployed to multiple combat zones, including Iraq and Afghanistan. I was responsible for leading
+            and training a team of soldiers, conducting missions, and ensuring the safety and security of our unit. I
+            gained valuable experience in teamwork, problem-solving, and adaptability, which I believe will translate
+            well into the civilian workforce.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card2')">
+        <h3>Question 2: How did your military service prepare you for the civilian workforce?</h3>
+        <div id="card2-answer" class="answer">
+            Answer: My military service provided me with a strong foundation of skills and qualities that are directly
+            applicable to the civilian workforce. The military instilled in me a strong work ethic, discipline, and the
+            ability to work effectively under pressure. Additionally, I developed exceptional leadership and teamwork
+            abilities, honed my problem-solving skills, and learned to adapt quickly to changing situations. These
+            attributes, coupled with the specialized training I received in my military occupational specialty, have
+            prepared me well for success in the civilian work environment.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card3')">
+        <h3>Question 3: What skills did you acquire in the military that are relevant to this job?</h3>
+        <div id="card3-answer" class="answer">
+            Answer: During my military service, I acquired a diverse set of skills that are directly relevant to this
+            job. First and foremost, my leadership abilities and experience in leading teams in high-pressure situations
+            make me well-suited for guiding and motivating a group towards achieving common goals. Additionally, my
+            strong problem-solving skills, attention to detail, and ability to work under tight deadlines will enable me
+            to handle challenging tasks efficiently. Furthermore, my background in logistics and resource management
+            will be valuable in optimizing processes and ensuring effective allocation of resources within the
+            organization.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card4')">
+        <h3>Question 4: Can you provide an example of a challenging situation you faced in the military and how you
+            handled it?</h3>
+        <div id="card4-answer" class="answer">
+            Answer: One of the most challenging situations I faced in the military was during a combat deployment when
+            our unit was ambushed by enemy forces. The situation quickly escalated, and we found ourselves outnumbered
+            and under heavy fire. In the midst of chaos, I maintained calm and immediately took charge, issuing clear
+            and concise orders to my team. I established communication with other nearby units, coordinated fire
+            support, and ensured the safety of my soldiers. By making swift decisions under pressure and effectively
+            leading my team, we were able to repel the enemy and safely complete our mission.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card5')">
+        <h3>Question 5: What motivated you to transition from military service to civilian employment?</h3>
+        <div id="card5-answer" class="answer">
+            Answer: One of the main motivations behind my transition from military service to civilian employment is the
+            desire to continue serving and contributing to my community in a different capacity. While I valued the
+            experiences and skills gained in the military, I also recognized the opportunity to apply those skills in a
+            civilian setting and make a positive impact in a new field. Additionally, I wanted to broaden my
+            professional horizons, seek new challenges, and provide stability for my family. Transitioning to civilian
+            employment allows me to utilize my military background while pursuing personal and career growth.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card6')">
+        <h3>Question 6: How do you handle stress and pressure in a work environment?</h3>
+        <div id="card6-answer" class="answer">
+            Answer: Throughout my military career, I became adept at handling stress and pressure in high-stakes
+            situations. One strategy I employ is to maintain a composed and level-headed approach, even in challenging
+            circumstances. I prioritize tasks, break them down into manageable steps, and focus on one task at a time to
+            prevent feeling overwhelmed. I also believe in open communication and teamwork, seeking support from
+            colleagues or superiors when needed. Furthermore, I understand the importance of self-care and stress
+            management techniques, such as regular exercise, maintaining a healthy work-life balance, and practicing
+            mindfulness, to ensure I am equipped to handle stress effectively.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card7')">
+        <h3>Question 7: What steps have you taken to translate your military experience into applicable skills for this
+            industry?</h3>
+        <div id="card7-answer" class="answer">
+            Answer: To translate my military experience into applicable skills for this industry, I have undertaken
+            several proactive steps. First, I thoroughly researched the industry and job requirements to identify areas
+            where my military background aligns with the desired skills and qualifications. I then highlighted relevant
+            experiences and accomplishments in my resume and cover letter to effectively communicate my transferable
+            skills. Additionally, I pursued relevant certifications or training programs to supplement my existing
+            knowledge and bridge any skill gaps. Finally, I networked with professionals in the industry to gain
+            insights and advice, further enhancing my understanding of how my military experience translates into this
+            specific field.
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleAnswer('card8')">
+        <h3>Question 8: How do you prioritize tasks and manage your time effectively?</h3>
+        <div id="card8-answer" class="answer">
+            Answer: Task prioritization and effective time management are crucial skills that I honed during my military
+            service. To prioritize tasks, I evaluate their urgency, importance, and impact on overall objectives. I use
+            techniques like creating task lists, setting deadlines, and breaking larger projects into smaller,
+            manageable tasks. I also leverage technology tools, such as calendars and productivity apps, to stay
+            organized and track progress. Moreover, I believe in maintaining open communication with team members and
+            superiors to ensure alignment on priorities and deadlines. By employing
+        </div>
+    </div>
+    <div class="card" onclick="toggleAnswer('card9')">
+        <h3>Question 9: Can you discuss a time when you had to lead a team and what the outcome was?</h3>
+        <div id="card9-answer" class="answer">
+          Answer: During my military service, I was assigned as a team leader for a critical mission. The team consisted of individuals with diverse backgrounds and skill sets. I focused on establishing clear objectives, ensuring effective communication, and fostering a supportive and collaborative environment. By leveraging each team member's strengths and providing guidance and mentorship, we successfully executed the mission within the designated timeframe, exceeding expectations. The experience reinforced the importance of effective leadership, teamwork, and trust-building in achieving exceptional outcomes.
+        </div>
+      </div>
+    
+      <div class="card" onclick="toggleAnswer('card10')">
+        <h3>Question 10: What would you do if you were faced with a disagreement in your workplace?</h3>
+        <div id="card10-answer" class="answer">
+          Answer: When faced with disagreements in the workplace, I believe in maintaining a professional and respectful approach. First, I strive to actively listen to understand the other person's perspective. I then express my own viewpoint calmly and provide supporting evidence or alternative solutions. I am open to constructive dialogue and willing to compromise if it aligns with the best interests of the team or organization. If necessary, I would escalate the matter through appropriate channels, ensuring clear communication and seeking resolution in a collaborative manner.
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

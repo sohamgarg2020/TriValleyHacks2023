@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Hackathon Project</title>
+    <style>
+        .centered {
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .job-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mission Transition</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="/jobs">Jobs</a>
+                        <a class="nav-link" href="/resume">Resume Builder</a>
+                        <a class="nav-link" href="/interview-prep">Interview Preparation</a>
+                        <a class="nav-link" href="/therapist">Therapist</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav> -->
+    </nav>
+    <form method="post">
+        <!-- <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        @example.com
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">@yahoo.com</button></li>
+                        <li><button class="dropdown-item" type="button">@gmail.com</button></li>
+                        <li><button class="dropdown-item" type="button">@hotmail.com</button></li>
+                    </ul>
+                </div>
+            </span>
+        </div> -->
+        <h1>
+            Resume Builder
+        </h1>
+        <h2>
+            Background Information
+        </h2>
+        <input placeholder="Enter your name" class="form-control" name="userName" type="text">
+        <input placeholder="Enter your email" class="form-control" name="userEmail" type="text">
+        <input placeholder="Enter your zip code" class="form-control" name="userLoc" type="text">
+        <input placeholder="Enter your phone number" class="form-control" name="userNumber" type="text">
+
+        <h2>
+            Education
+        </h2>
+
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Add College
+            </button>
+        </p>
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <input placeholder="Enter your college's name" class="form-control" name="userCollegeName" type="text">
+                <input placeholder="Enter your College Cumulative GPA (Unweighted)" class="form-control"
+                    name="userCollegeGPA" type="text">
+                <input placeholder="Enter your major" class="form-control" name="userCollegeMajor" type="text">
+                <input
+                    placeholder="Enter notable organizations (Make sure to use hyphens if more than 1 word, use spaces to separate the organizations) (if none, leave blank)"
+                    class="form-control" name="userCollegeOrganizations" type="text">
+            </div>
+        </div>
+        <input placeholder="Enter your high school's name" class="form-control" name="userHSName" type="text">
+        <input placeholder="Enter your high school GPA (unweighted)" class="form-control" name="userHSGPA" type="text">
+        <input
+            placeholder="Enter notable classes (Make sure to use hyphens if more than 1 word, use spaces to separate the classes) (if none, leave blank)"
+            class="form-control" name="userHSClasses" type="text">
+        <p>
+
+        </p>
+        <h2>
+            Work Experience
+        </h2>
+        <p>
+
+        </p>
+        <input placeholder="Enter Work Experience #1" class="form-control" name="userWK1" type="text">
+        <input placeholder="Enter Work Experience #2" class="form-control" name="userWK2" type="text">
+        <input placeholder="Enter Work Experience #3" class="form-control" name="userWK3" type="text">
+
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
